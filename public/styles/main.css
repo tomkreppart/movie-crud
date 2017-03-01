@@ -1,0 +1,68 @@
+
+body {
+  font-family: 'Alegreya', serif;
+}
+.full {
+  margin-top: 70px;
+  background-color: #7f9ecd;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.navbar-brand {
+  font-size: 24px;
+}
+
+.table {
+  background-color: #ccc;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+th {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+  font-size: 16px;
+}
+
+#heading {
+  color: #4b4b4b;
+}
+
+.selected-movies {
+  max-height:440px;
+  overflow-y:auto;
+}
+
+.showBody {
+  font-size: 30px;
+  text-align:left;
+  text-shadow: 3px 3px 5px rgba(150, 150, 150, 1);
+}
+
+.show-info {
+  margin-right: 10px;
+  margin-left: 60px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.poster {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,27 @@
+body {
+	margin-top: 300px;
+  margin-right: 20%;
+	background: none;
+  text-align: right;
+  font-family: 'Alegreya', serif;
+}
+
+.full {
+  background: url(https://wallpaperscraft.com/image/light_background_pixar_74380_2560x1440.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home-title h1 {
+  font-size: 52px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.home-title a {
+  font-size: 24px;
+  font-weight: lighter;
+  color: #3c3c3c;
+}

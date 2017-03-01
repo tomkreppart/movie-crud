@@ -38,15 +38,12 @@
 ![Index](/mockups/show.png)
 
 
-## ROUTES 
- 
+## ROUTES
+
 Use the RESTful routes for each of your routes.
 
 - GET /movies   _lists all movies_
 - POST /movies  _creates a new movie_
 - GET /movies/:id  _show one movie_
 - GET /movies/:id/edit _form to edit a movie_
-- ... etc 
-
-
-
+- ... etc
