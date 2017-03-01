@@ -39,9 +39,6 @@ $(document).ready(function() {
       $('.editRating').val(rowObj.myRating)
       $('.editURL').val(rowObj.posterURL)
 
-      // console.log(rowObj);
-      // console.log(movieToEdit);
-      // console.log(movieId);
     })
 
     $( ".updateModBtn" ).click(function() {
@@ -64,7 +61,6 @@ $(document).ready(function() {
           "posterURL": movieURL
         },
         success: function(result) {
-
         }
       }).then(function(result) {
         // $('#edit').modal('hide')
@@ -121,13 +117,7 @@ $(document).ready(function() {
       rowObj.director = tableRow[1].innerText;
       rowObj.year = tableRow[2].innerText;
       rowObj.myRating = tableRow[3].innerText;
-      // rowObj.posterURL = grabPoster
 
-      // var showTitle = $('.showTitle').val(rowObj.title)
-      // var showDirector = $('.showDirector').val(rowObj.director)
-      // var showYear = $('.showYear').val(rowObj.year)
-      // var showRating = $('.showRating').val(rowObj.myRating)
-      // $('.showURL').val(rowObj.posterURL)
       $('.showTitle').empty()
       $('.showDirector').empty()
       $('.showYear').empty()
@@ -139,9 +129,6 @@ $(document).ready(function() {
       $('.poster').remove()
       $('.showBody').prepend("<img src='" + grabPoster + "'class='modal-content poster img-responsive' id='" + grabPoster + "'>")
 
-
-      // console.log(movieToShow);
-      // console.log(movieId);
     })
   })
 
@@ -184,7 +171,7 @@ $(document).ready(function() {
         success: function(result) {
 
 
-            $( ".table-body" ).prepend("<tr class='" + postTitle + "'><td class='movie-title'>" + postTitle + "</td><td class='movie-director'>" + postDirector + "</td><td class='movie-year'>" + postYear + "</td><td class='movie-Rating'>" + postRating + "</td><td><p data-placement='top' data-toggle='tooltip' title='Show'><button class='btn btn-primary btn-block showBtn' id='" + postTitle + "' data-title='Show' data-toggle='modal' data-target='#show' data-poster='" + postURL + "'><span class='text'>Show</span></button></p></td><td><p data-placement='top' data-toggle='tooltip' title='Edit'><button class='btn btn-primary btn-block editBtn' id='" + postTitle + "' data-title='Edit' data-toggle='modal' data-target='#edit' data-poster='" + postURL + "'><span class='glyphicon glyphicon-pencil'></span></button></p></td><td><p data-placement='top' data-toggle='tooltip' title='Delete'><button class='btn btn-danger btn-block deleteBtn' id='" + postTitle + "'  data-title='Delete' data-toggle='modal' data-target='#delete' data-poster='" + postURL + "'><span class='glyphicon glyphicon-trash'></span></button></p></td></tr>")
+            $( ".table-body" ).append("<tr class='" + postTitle + "'><td class='movie-title'>" + postTitle + "</td><td class='movie-director'>" + postDirector + "</td><td class='movie-year'>" + postYear + "</td><td class='movie-Rating'>" + postRating + "</td><td><p data-placement='top' data-toggle='tooltip' title='Show'><button class='btn btn-primary btn-block showBtn' id='" + postTitle + "' data-title='Show' data-toggle='modal' data-target='#show' data-poster='" + postURL + "'><span class='text'>Show</span></button></p></td><td><p data-placement='top' data-toggle='tooltip' title='Edit'><button class='btn btn-primary btn-block editBtn' id='" + postTitle + "' data-title='Edit' data-toggle='modal' data-target='#edit' data-poster='" + postURL + "'><span class='glyphicon glyphicon-pencil'></span></button></p></td><td><p data-placement='top' data-toggle='tooltip' title='Delete'><button class='btn btn-danger btn-block deleteBtn' id='" + postTitle + "'  data-title='Delete' data-toggle='modal' data-target='#delete' data-poster='" + postURL + "'><span class='glyphicon glyphicon-trash'></span></button></p></td></tr>")
 
             $('#new').modal('hide');
 
