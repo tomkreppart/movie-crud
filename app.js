@@ -3,7 +3,7 @@ const app = express();
 const routes = require('./routes.js');
 const bodyParser = require('body-parser');
 
-app.use(express.static('./public'))
+app.use(express.static('./public', {index:"home.html"}))
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json());
 app.use('/', routes);
